@@ -18,4 +18,9 @@ class StudentController extends Controller
     {
         return view('students.create');
     }
+
+    public function edit(Student $student)
+    {
+        return view('students.edit', compact('student'));
+    }
 }
